@@ -1,0 +1,199 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "node-mongo-project",
+    "dateExported": "2023-03-13T06:33:17.724Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "38c196c6-68ba-4f7f-8a8a-cc12d35d75e0",
+            "colId": "c43091b0-8739-4139-a37d-b4bb4d0b758e",
+            "containerId": "",
+            "name": "login",
+            "url": "http://localhost:7000/login",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2023-03-13T05:13:50.509Z",
+            "modified": "2023-03-13T06:33:05.385Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"email\": \"connect@mkmalik.com\",\n  \"password\": \"abcd1234\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "ecb4aab2-734b-41c4-b96e-a65612210c0e",
+            "colId": "c43091b0-8739-4139-a37d-b4bb4d0b758e",
+            "containerId": "",
+            "name": "register",
+            "url": "http://localhost:7000/register",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2023-03-13T05:14:10.051Z",
+            "modified": "2023-03-13T06:32:23.329Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"email\": \"connect2@mkmalik.com\",\n  \"password\": \"abcd1234\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "dd74188b-3d7f-4b17-a5dd-791828bdaa8c",
+            "colId": "c43091b0-8739-4139-a37d-b4bb4d0b758e",
+            "containerId": "",
+            "name": "create post",
+            "url": "http://localhost:7000/posts",
+            "method": "POST",
+            "sortNum": 40000,
+            "created": "2023-03-13T05:24:39.179Z",
+            "modified": "2023-03-13T06:20:53.801Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"title\": \"123\",\n  \n  \"location\": {\n    \"latitude\": 26.085409,\n    \"longitude\": 83.297951\n  }\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0MGViMDZlMWY4ZGRmNWMzNWYxZmJmYSIsImlhdCI6MTY3ODY4NTI3Mn0.WsQpolhfcjhT07jtJkNxqrbQ52PpL0_voTB48VGtVUc"
+            },
+            "tests": []
+        },
+        {
+            "_id": "dbbde604-8ef3-488e-9a67-025d395cd4cf",
+            "colId": "c43091b0-8739-4139-a37d-b4bb4d0b758e",
+            "containerId": "",
+            "name": "get post by id",
+            "url": "http://localhost:7000/posts/640eb8cc715ea4bea23d5797",
+            "method": "GET",
+            "sortNum": 50000,
+            "created": "2023-03-13T05:30:24.182Z",
+            "modified": "2023-03-13T06:07:32.081Z",
+            "headers": [],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0MGViMDZlMWY4ZGRmNWMzNWYxZmJmYSIsImlhdCI6MTY3ODY4NTI3Mn0.WsQpolhfcjhT07jtJkNxqrbQ52PpL0_voTB48VGtVUc"
+            },
+            "tests": []
+        },
+        {
+            "_id": "4a233b49-6d19-4263-8c1e-af930cdeedb8",
+            "colId": "c43091b0-8739-4139-a37d-b4bb4d0b758e",
+            "containerId": "",
+            "name": "get all post by user",
+            "url": "http://localhost:7000/posts/",
+            "method": "GET",
+            "sortNum": 60000,
+            "created": "2023-03-13T05:31:49.956Z",
+            "modified": "2023-03-13T05:47:19.823Z",
+            "headers": [],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0MGViMDZlMWY4ZGRmNWMzNWYxZmJmYSIsImlhdCI6MTY3ODY4NTI3Mn0.WsQpolhfcjhT07jtJkNxqrbQ52PpL0_voTB48VGtVUc"
+            },
+            "tests": []
+        },
+        {
+            "_id": "9841e7b8-6455-4f6a-be09-ad9a16c89853",
+            "colId": "c43091b0-8739-4139-a37d-b4bb4d0b758e",
+            "containerId": "",
+            "name": "update post",
+            "url": "http://localhost:7000/posts/640eb8cc715ea4bea23d5797",
+            "method": "PATCH",
+            "sortNum": 70000,
+            "created": "2023-03-13T05:32:31.902Z",
+            "modified": "2023-03-13T06:27:41.342Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \n  \"body\": \"You can read any book of your choice. If book is great, you'll get goosebumps. EDIT: Updated.\",\n  \"location\": {\n    \"latitude\": 26.085489,\n    \"longitude\": 83.297951\n  }\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0MGViMDZlMWY4ZGRmNWMzNWYxZmJmYSIsImlhdCI6MTY3ODY4NTI3Mn0.WsQpolhfcjhT07jtJkNxqrbQ52PpL0_voTB48VGtVUc"
+            },
+            "tests": []
+        },
+        {
+            "_id": "c09407ee-3427-4004-a60a-9f1d18b24060",
+            "colId": "c43091b0-8739-4139-a37d-b4bb4d0b758e",
+            "containerId": "",
+            "name": "delete post",
+            "url": "http://localhost:7000/posts/640eb4e93af8414f62ae7cfe",
+            "method": "DELETE",
+            "sortNum": 80000,
+            "created": "2023-03-13T05:33:45.707Z",
+            "modified": "2023-03-13T05:47:40.884Z",
+            "headers": [],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0MGViMDZlMWY4ZGRmNWMzNWYxZmJmYSIsImlhdCI6MTY3ODY4NTI3Mn0.WsQpolhfcjhT07jtJkNxqrbQ52PpL0_voTB48VGtVUc"
+            },
+            "tests": []
+        },
+        {
+            "_id": "ab983f17-74b7-4875-b006-4194dc4c16ce",
+            "colId": "c43091b0-8739-4139-a37d-b4bb4d0b758e",
+            "containerId": "",
+            "name": "get nearby posts",
+            "url": "http://localhost:7000/posts/nearby?latitude=83.522&longitude=26.0098&radius=6741",
+            "method": "GET",
+            "sortNum": 90000,
+            "created": "2023-03-13T05:34:08.026Z",
+            "modified": "2023-03-13T06:23:14.813Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "latitude",
+                    "value": "83.522",
+                    "isPath": false
+                },
+                {
+                    "name": "longitude",
+                    "value": "26.0098",
+                    "isPath": false
+                },
+                {
+                    "name": "radius",
+                    "value": "6741",
+                    "isPath": false
+                }
+            ],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0MGViMDZlMWY4ZGRmNWMzNWYxZmJmYSIsImlhdCI6MTY3ODY4NTI3Mn0.WsQpolhfcjhT07jtJkNxqrbQ52PpL0_voTB48VGtVUc"
+            },
+            "tests": []
+        },
+        {
+            "_id": "6cae39fb-447b-41a1-87c6-787e671d6449",
+            "colId": "c43091b0-8739-4139-a37d-b4bb4d0b758e",
+            "containerId": "",
+            "name": "get post count",
+            "url": "http://localhost:7000/posts/count",
+            "method": "GET",
+            "sortNum": 100000,
+            "created": "2023-03-13T05:51:11.697Z",
+            "modified": "2023-03-13T05:51:42.536Z",
+            "headers": [],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0MGViMDZlMWY4ZGRmNWMzNWYxZmJmYSIsImlhdCI6MTY3ODY4NTI3Mn0.WsQpolhfcjhT07jtJkNxqrbQ52PpL0_voTB48VGtVUc"
+            },
+            "tests": []
+        }
+    ]
+}
