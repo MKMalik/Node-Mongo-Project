@@ -114,10 +114,6 @@ module.exports = {
 
     getPostById: async (req, res) => {
         try {
-            
-            if (error) {
-                return res.status(400).json({ message: error.details[0].message });
-            }
             const post = await Post.findOne({ _id: req.params.postId, createdBy: req.user._id });
             if (!post) {
                 return res.status(404).json({ message: 'Post not found' });

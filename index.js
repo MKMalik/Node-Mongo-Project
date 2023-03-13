@@ -1,10 +1,5 @@
 const mongoose = require('mongoose');
 require('dotenv').config();
-const passport = require('passport');
-const passportJWT = require('passport-jwt');
-const JwtStrategy = passportJWT.Strategy;
-const ExtractJwt = passportJWT.ExtractJwt;
-const User = require('./models/user.model');
 const authenticate = require('./middlewares/auth.middleware');
 
 const authController = require('./controllers/auth.controller');
