@@ -1,11 +1,11 @@
-## Node-Mongo Project
+# Node-Mongo Project
 
 This is a Node.js project with MongoDB database. It provides APIs for user authentication and creating, retrieving and updating posts.
 
-# API Endpoints
+## API Endpoints
 The following are the API endpoints:
 
-# Login
+## Login
 - Endpoint: /login
 - Method: POST
 - Body:
@@ -19,7 +19,7 @@ The following are the API endpoints:
 - Headers: none
 - Parameters: none
 
-# Register
+## Register
 - Endpoint: /register
 - Method: POST
 - Body:
@@ -32,7 +32,7 @@ The following are the API endpoints:
 - Headers: none
 - Parameters: none
 
-# Create Post
+## Create Post
 - Endpoint: /posts
 - Method: POST
 - Body:
@@ -50,7 +50,7 @@ The following are the API endpoints:
 - - Authorization: Bearer JWT token
 - Parameters: none
 
-# Get Post by ID
+## Get Post by ID
 - Endpoint: /posts/:id
 - Method: GET
 - Body: none
@@ -60,7 +60,7 @@ The following are the API endpoints:
 - - id: ID of the post to retrieve
 
 
-# Update Post by ID
+## Update Post by ID
 - Endpoint: /posts/:id
 - Method: PUT
 - Body:
@@ -79,7 +79,7 @@ The following are the API endpoints:
 - Parameters:
 - - id: ID of the post to update
 
-# Delete Post by ID
+## Delete Post by ID
 - Endpoint: /posts/:id
 - Method: DELETE
 - Body: none
@@ -89,13 +89,13 @@ The following are the API endpoints:
 - - id: ID of the post to delete
 
 
-# Tools Used
+## Tools Used
 - Thunder Client (API testing tool)
 - Node.js
 - Express.js
 - MongoDB
 
-# How to Run
+## How to Run
 1. Clone this repository.
 2. Install dependencies with npm install.
 3. Rename .env.sample file to .env and replace the values with your own MongoDB configuration.
