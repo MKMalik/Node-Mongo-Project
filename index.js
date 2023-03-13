@@ -23,28 +23,6 @@ mongoose.connect(process.env.DB_URI, {
     .then(() => console.log('Connected to database'))
     .catch((error) => console.log('error: ', error.message));
 
-
-
-
-const jwtOptions = {
-    jwtFromRequest: ExtractJwt.fromAuthHeaderAsBearerToken(),
-    secretOrKey: process.env.JWT_SECRET
-};
-
-passport.use(new JwtStrategy(jwtOptions, async (jwtPayload, done) => {
-    try {
-        const user = await User.findById(jwtPayload.id);
-
-        if (user) {
-            return done(null, user);
-        } else {
-            return done(null, false);
-        }
-    } catch (error) {
-        return done(error, false);
-    }
-}));
-
 app.post('/register', authController.register);
 app.post('/login', authController.login);
 
